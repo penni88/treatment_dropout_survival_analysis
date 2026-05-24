@@ -1,5 +1,7 @@
 # Predicting Treatment Dropout in Substance Use Programs: A Competing Risks Survival Analysis
 
+Note: the goal of this project is to practice analysis in Jupyter notebook with Python
+
 ## Overview
 
 Voluntary dropout from substance use treatment reduces program effectiveness and diminishes clinical resources. This project applies a competing risks survival analysis framework to 22,028 discharge records from the 2023 TEDS-D (Treatment Episode Data Set Discharges) dataset to examine which participant characteristics and treatment factors predict the timing of voluntary dropout. All non-dropout exits, including death, incarceration, and facility termination, are modeled as competing events, producing unbiased cumulative incidence estimates.
@@ -60,5 +62,3 @@ Python, pandas, numpy, lifelines, scikit-learn, matplotlib, seaborn
 - Park, S. H., Han, K., & Park, S. Y. (2021). Mistakes to avoid for accurate and transparent reporting of survival analysis in imaging research. Korean Journal of Radiology, 22(10), 1587–1593. https://doi.org/10.3348/kjr.2021.0579
 - Substance Abuse and Mental Health Services Administration. (2023). Treatment Episode Data Set — Discharges (TEDS-D): 2023. SAMHSA. https://www.samhsa.gov/data
 - Swift, J. K., & Greenberg, R. P. (2012). Premature discontinuation in adult psychotherapy: A meta-analysis. Journal of Consulting and Clinical Psychology, 80(4), 547–559. https://doi.org/10.1037/a0028226
-
-Note: the goal of this project is to practice analysis in Jupyter notebook with Python
