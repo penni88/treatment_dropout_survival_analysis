@@ -2,22 +2,22 @@
 
 ## Overview
 
-Voluntary dropout from substance use treatment reduces program effectiveness and wastes clinical resources. This project applies a competing risks survival analysis framework to 22,028 discharge records from the 2023 TEDS-D dataset to examine which participant characteristics and treatment factors predict the timing of voluntary dropout. Rather than treating all non-dropout exits as censored, death, incarceration, and facility termination are modeled as competing events, producing unbiased cumulative incidence estimates.
+Voluntary dropout from substance use treatment reduces program effectiveness and diminishes clinical resources. This project applies a competing risks survival analysis framework to 22,028 discharge records from the 2023 TEDS-D (Treatment Episode Data Set Discharges) dataset to examine which participant characteristics and treatment factors predict the timing of voluntary dropout. All non-dropout exits, including death, incarceration, and facility termination, are modeled as competing events, producing unbiased cumulative incidence estimates.
 
 ## Background
 
-This project extends prior work predicting dropout in longitudinal research studies using logistic regression and simulated data. The present analysis moves to real administrative health data, a competing risks time-to-event outcome, and a larger, more representative sample — demonstrating progression from binary prediction to survival modeling.
+This project extends prior work predicting dropout in longitudinal research studies using logistic regression and simulated data. The present analysis uses real administrative health data, a competing risks time-to-event outcome, and a larger, more representative samples to demonstrate progression from simple prediction to survival modeling.
 
 ## Dataset
 
-Treatment Episode Data Set — Discharges (TEDS-D) 2023, obtained from SAMHSA. Public use file downloaded at no cost.
+Treatment Episode Data Set — Discharges (TEDS-D) 2023, obtained from the Substance Abuse and Mental Health Services Administration (SAMHSA). This is a public use file downloaded at no cost.
 
 - Starting sample: 51,971 discharge records
-- Analytic sample: 22,028 participants (42.4% retained after cleaning)
+- Analytic sample: 22,028 participants (42.4% retained after data cleaning)
 - Overall dropout rate: 20.6%
 - Competing events: death (0.2%), incarceration (1.7%), facility termination (9.5%)
 
-**Key features included:** age, sex, race/ethnicity, employment status, health insurance, primary substance, co-occurring mental health disorder, referral source, treatment setting, frequency of use at intake.
+**Key features included:** age, sex, race, employment status, health insurance, primary substance, co-occurring mental health disorder, referral source, treatment setting, frequency of use at intake.
 
 ## Methods
 
@@ -28,7 +28,7 @@ Treatment Episode Data Set — Discharges (TEDS-D) 2023, obtained from SAMHSA. P
 
 ## Key Findings
 
-* Benzodiazepine users dropped out 57.8% faster than alcohol users (HR=1.578, p=0.0004) — the strongest substance effect
+* Benzodiazepine users dropped out 57.8% faster than alcohol users (HR=1.578, p=0.0004),  the strongest substance effect
 * Black or African American participants dropped out 18.2% faster than White participants after controlling for all other covariates (HR=1.182, p<0.0005)
 * Court-mandated participants dropped out 23.4% slower than self-referred participants (HR=0.766, p<0.0005)
 * Participants reporting no substance use at intake retained significantly better than daily users (HR=0.771, p<0.0005)
@@ -60,3 +60,5 @@ Python, pandas, numpy, lifelines, scikit-learn, matplotlib, seaborn
 - Park, S. H., Han, K., & Park, S. Y. (2021). Mistakes to avoid for accurate and transparent reporting of survival analysis in imaging research. Korean Journal of Radiology, 22(10), 1587–1593. https://doi.org/10.3348/kjr.2021.0579
 - Substance Abuse and Mental Health Services Administration. (2023). Treatment Episode Data Set — Discharges (TEDS-D): 2023. SAMHSA. https://www.samhsa.gov/data
 - Swift, J. K., & Greenberg, R. P. (2012). Premature discontinuation in adult psychotherapy: A meta-analysis. Journal of Consulting and Clinical Psychology, 80(4), 547–559. https://doi.org/10.1037/a0028226
+
+Note: the goal of this project is to practice analysis in Jupyter notebook with Python
