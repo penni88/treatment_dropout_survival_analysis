@@ -48,7 +48,10 @@ Python, pandas, numpy, lifelines, scikit-learn, matplotlib, seaborn
 - group_comparison_treatment.png — survival curves by treatment context
 - cox_stratified_hazard_ratios.png — adjusted hazard ratio forest plot
 - descriptive_dropout_rates.png — dropout rates by participant characteristics
+- descriptive_dropout_age.png - dropout rates by age group
+- descriptive_dropout_substance_all.png - dropout rates by primary substance
 - event_type_distribution.png — discharge outcome distribution
+- cox_hazard_ratios.png - adjusted original hazard ratio forest plot
 
 ## References
 
