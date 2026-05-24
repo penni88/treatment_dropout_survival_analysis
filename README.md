@@ -41,7 +41,7 @@ Python, pandas, numpy, lifelines, scikit-learn, matplotlib, seaborn
 
 ## Files
 
-- TEDS_Survival_Analysis.ipynb — full analysis notebook
+- Dropout_Survival_Analysis.ipynb — full analysis notebook
 - competing_risks_curve.png — overall cumulative incidence curve
 - group_comparison_demographics.png — survival curves by demographics
 - group_comparison_curves.png — survival curves by participant characteristics
